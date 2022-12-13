@@ -10,3 +10,17 @@
 
 }
 
+.story {
+  border: 0.5px solid rgb(73, 118, 243);
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+.story p {
+  font-size: 12px;
+}
+
+.story p b {
+  font-size: 18px;
+}
