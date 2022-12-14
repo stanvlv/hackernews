@@ -19,9 +19,14 @@ export default function Footer({setQuery}) {
   return (
     <div>
       {/* Here on submit we use the setQuery from Main to replace the link with the input value */}
-      <form onSubmit={(e) => {e.preventDefault(); setQuery(`query=${inputSearch}`)}}>
-        <input placeholder='Search' type='text' onChange={(e) => { setInputSearch(e.target.value)}} />
-        <button>Search</button>
+      <form className="form-group mx-sm-5 mb-2 row" onSubmit={(e) => {e.preventDefault(); setQuery(`query=${inputSearch}`)}}>
+       <div className="col-3"></div>
+       <div className="col-4">
+        <input className="form-control" placeholder='Search' type='text' onChange={(e) => { setInputSearch(e.target.value)}} />
+       </div>
+       <div className="col-2">
+        <button className="col-10 btn btn-primary mb-2" >Search</button>
+        </div>
       </form>
     </div>
   )

@@ -17,7 +17,7 @@ export default function Main() {
     useEffect(() => {
       axios.get(`http://hn.algolia.com/api/v1/search?${query}`)
       .then(response => setData(response.data.hits))
-      .catch(error => console.log(error))
+      .catch(error => alert("Sorry! :( We have an error: " + error))
     }, [query])
 
  
