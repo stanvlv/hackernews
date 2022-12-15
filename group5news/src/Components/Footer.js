@@ -22,7 +22,7 @@ export default function Footer({setQuery}) {
       <form className="form-group mx-sm-5 mb-2 row" onSubmit={(e) => {e.preventDefault(); setQuery(`query=${inputSearch}`)}}>
        <div className="col-3"></div>
        <div className="col-4">
-        <input className="form-control" placeholder='Search' type='text' onChange={(e) => { setInputSearch(e.target.value)}} />
+        <input className="form-control" placeholder='Search' type='text' onChange={(e) => {setInputSearch(e.target.value)}} />
        </div>
        <div className="col-2">
         <button className="col-10 btn btn-primary mb-2" >Search</button>
