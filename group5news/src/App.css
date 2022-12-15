@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .me-auto {
  display:flex;
@@ -13,16 +10,30 @@
 .story {
   border: 0.5px solid rgb(73, 118, 243);
   background-color: rgb(255, 255, 255);
+  margin: 0.8rem 1rem
+  
+}
+
+.Box{
+  padding: 0;
+  list-style-type: none;
 
 }
 
 
 .story p {
   font-size: 12px;
+  margin: 0.5rem 1.2rem
 }
 
 .story p b {
   font-size: 18px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .pagination{
