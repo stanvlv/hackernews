@@ -21,7 +21,7 @@ export default function Main() {
     }, [query])
 
  
-    console.log(data)
+    // console.log(data)
 
   return (
     <div>
