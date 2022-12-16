@@ -17,7 +17,9 @@ export default function MainNews({data}) {
    
 
     return (
+
 <div>
+<div className='loader'></div>
         <ol className='Box'>
          {currentItems.map((item) => {
                 return (
