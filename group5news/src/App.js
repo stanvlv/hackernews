@@ -11,7 +11,7 @@ import New from "./Components/New"
 import Past from "./Components/Past"
 import Comments from "./Components/Comments"
 import Ask from "./Components/Ask"
-
+import React from 'react'
 
 function App() {
   let activeClassName = "activeNav";
