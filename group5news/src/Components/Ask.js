@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import MainNews from './MainNews';
 import Footer from './Footer'
-export default function New() {
+export default function Ask() {
 
   // this query is the last part of the APi link which is default with the home page
   // and on change we use it in Footer so it takes the searched value and pastes
@@ -15,7 +15,7 @@ export default function New() {
 
     //here we get API with useState at the end because we change it with our search from Footer
     useEffect(() => {
-      axios.get(`http://hn.algolia.com/api/v1/search_by_date?${query}`)
+      axios.get(`http://hn.algolia.com/api/v1/search?query=AskHN&tags=story`)
       .then(response => setData(response.data.hits))
       .catch(error => alert("Sorry! :( We have an error: " + error))
     }, [query])
@@ -32,6 +32,3 @@ export default function New() {
        </div>
   )
 }
-
-
-

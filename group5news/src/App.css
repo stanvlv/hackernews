@@ -6,6 +6,35 @@
  margin: 0;
 
 }
+.nav{
+  display: flex;
+  align-content: center;
+  margin: 0 1rem;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav:hover{
+  color: #0d6efd;
+  background-color: aliceblue;
+}
+
+.activeNav{
+  display: flex;
+  align-content: center;
+  padding: 0.2rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #0d6efd;
+  background-color: aliceblue;
+}
+
+.me-auto{
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
 
 .story {
   border: 0.5px solid rgb(73, 118, 243);
