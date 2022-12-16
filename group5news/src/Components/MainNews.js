@@ -1,6 +1,10 @@
 import ReactPaginate from 'react-paginate';
 import React, {useState, useEffect} from 'react'
+import axios from 'axios'
+import PostComments from './PostComments'
+
 export default function MainNews({data}) {
+
 
    //Start of pagination:
    const [itemOffset, setItemOffset] = useState(0);
@@ -15,17 +19,19 @@ export default function MainNews({data}) {
      setItemOffset(newOffset);
    };
    
-
     return (
 <div>
         <ol className='Box'>
          {currentItems.map((item) => {
                 return (
-                  <div>
+                  <div  key={item.objectID}>
                     
-                    <li className='story' key={item.objectID} >
+                    <li className='story' >
                     <p id='firstP'><b>{item.title}</b> (<a href={item.url} target="_blank">{item.url}</a>)</p>
-                    <p id='secondP'>{item.points} points, by: {item.author} , published at {item.created_at.substring(0, 10)}, {item.created_at.substring(11, 19)}, {item.num_comments} comments </p>
+                    <p id='secondP'>{item.points} points, by: {item.author} , published at {item.created_at.substring(0, 10)}, 
+                    {item.created_at.substring(11, 19)}, 
+                    </p>
+                     <PostComments number={item.num_comments} post={item.objectID} />
                             
         </li>
         </div>

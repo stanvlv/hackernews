@@ -48,8 +48,8 @@ export default function Comments() {
                   <div>
                     
                     <li className='story' key={item.objectID} >
-                    <p id='firstP'><b>{item.title}</b></p>
-                    <p id='secondP'>{item.comment_text}, by: {item.author} , published at {item.created_at.substring(0, 10)}, {item.created_at.substring(11, 19)} </p>
+                    <p id='firstP'><b>{item.story_title}</b></p>
+                    <p id='secondP'>{item.comment_text}, | by: {item.author} , | published at {item.created_at.substring(0, 10)}, | {item.created_at.substring(11, 19)} </p>
                             
         </li>
         </div>
